@@ -58,3 +58,22 @@ Like `shareImage()`, you can optionally pass `shareText()` a second argument to 
 ``` js
 socialShare.shareText("I love NativeScript!", "How would you like to share this text?");
 ```
+
+### shareFB(String text, [optional] String subject)
+
+The `shareText()` method expects a simple string:
+To check Facebook app availability use "nativescript-applist"
+
+``` js
+var socialShare = require("nativescript-social-share");
+var AppList = require('nativescript-applist');
+
+AppList.getInstalledApps(function(apps) {
+    for (var i = 0; i < apps.length; i++) {
+      if (apps[i].indexOf("com.facebook.katana") >= 0) {
+        socialShare.shareFB("facebook is installed!");
+      }
+    }
+});
+
+```
