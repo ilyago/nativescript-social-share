@@ -61,7 +61,7 @@ socialShare.shareText("I love NativeScript!", "How would you like to share this 
 
 ### shareFB(String text, [optional] String subject)
 
-The `shareText()` method expects a simple string:
+The `shareFB()` method expects a simple string:
 To check Facebook app availability use "nativescript-applist"
 
 ``` js
