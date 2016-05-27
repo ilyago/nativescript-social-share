@@ -44,5 +44,15 @@ module.exports = {
 
 		intent.putExtra(android.content.Intent.EXTRA_TEXT, text);
 		share(intent, subject);
+	},
+	shareFB: function(text, subject) {
+		var intent = getIntent("text/plain");
+
+		intent.putExtra(android.content.Intent.EXTRA_TEXT, text);
+		intent.setPackage("com.facebook.katana");
+		share(intent, subject);
 	}
 };
+
+
+
