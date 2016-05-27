@@ -1,7 +1,5 @@
 # NativeScript Social Share Plugin
 
-A NativeScript plugin to use the native social sharing widget on Android and iOS. Currently this module supports image and text sharing.
-
 ![](screenshots/ios.png)
 ![](screenshots/android.png)
 
@@ -10,7 +8,7 @@ A NativeScript plugin to use the native social sharing widget on Android and iOS
 Run the following command from the root of your project:
 
 ```
-$ tns plugin add nativescript-social-share
+$ tns plugin add git+https://git@github.com/ilyago/nativescript-social-share.git
 ```
 
 This command automatically installs the necessary files, as well as stores nativescript-social-share as a dependency in your project's `package.json` file.
